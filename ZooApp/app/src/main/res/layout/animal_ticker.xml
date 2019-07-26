@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="horizontal"
+              android:background="@color/gray"
+              android:padding="5pt">
+
+    <LinearLayout
+            android:background="@drawable/background"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView
+                android:layout_width="50pt"
+                android:layout_height="50pt" app:srcCompat="@drawable/baboon" android:id="@+id/imAnimal"
+                android:layout_weight="1"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+            <TextView
+                    android:text="Babon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvName" android:layout_weight="1"
+                    android:textSize="24sp" android:textStyle="bold"/>
+            <TextView
+                    android:text="Babon form japan can live with different animal in the zoo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvDes" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
