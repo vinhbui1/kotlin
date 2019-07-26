@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/gray"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity" android:orientation="vertical">
+    <LinearLayout
+            android:background="@drawable/ticket"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+        <TextView
+                android:text="Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvTitle" android:layout_weight="1"
+                android:textSize="24sp" android:textColor="#3F51B5" android:textStyle="bold"/>
+        <TextView
+                android:text="Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain .... In 1583, Leonhard Rauwolf, a German physician, gave this description of coffee after returning from a ten-year trip to the Near East: A beverage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvDes" android:layout_weight="1"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="1">
+            <Space
+                    android:layout_width="218dp"
+                    android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="31dp" app:srcCompat="@drawable/edit" android:id="@+id/ivEdit"
+                    android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/garbage" android:id="@+id/ivDelete"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
